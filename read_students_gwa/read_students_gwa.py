@@ -1,5 +1,17 @@
 # start:
 from art import *
+
+class color:
+    MAGENTA = '\033[95m'
+    CYAN = '\033[96m'
+    LIGHTCYAN = '\033[1;96m'
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    END = '\033[0m'
 #   create a text file that contains 20 students name and their gwa
 #   read the text file
 with open("read_students_gwa/students_gwa.txt", "r") as f:
@@ -17,8 +29,8 @@ for info in students:
         highest_student = name
 #   print the student with highest gwa in a "MAANGAS WAY" or "wow factor effect"
 title = text2art("Student with highest GWA")
-print(title)
+print(color.BOLD + color.RED + title)
 student_name = text2art(highest_student, font="block")
-print(student_name)
+print(color.GREEN + color.BOLD +student_name)
 student_gwa = text2art("{:.2f}".format(max_gwa))
-print(student_gwa)
+print(color.MAGENTA + student_gwa)
