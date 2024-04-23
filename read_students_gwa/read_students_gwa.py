@@ -4,6 +4,8 @@
 with open("read_students_gwa/students_gwa.txt", "r") as f:
     students = f.readlines() 
 #   initialize variables for the name and gwa of the highest student
+highest_student= ""
+max_gwa = 1
 #   create a loop to find the highest gwa and name
 #       split the name and gwa from text file
 #       convert string to float
