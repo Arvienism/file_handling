@@ -1,6 +1,8 @@
 # start:
 #   create a text file that contains 20 students name and their gwa
 #   read the text file
+with open("read_students_gwa/students_gwa.txt", "r") as f:
+    students = f.readlines() 
 #   initialize variables for the name and gwa of the highest student
 #   create a loop to find the highest gwa and name
 #       split the name and gwa from text file
