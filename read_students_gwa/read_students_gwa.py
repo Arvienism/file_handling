@@ -11,4 +11,7 @@ for info in students:
     name, gwa = info.split() #split the name and gwa from text file
     gwa = float(gwa) #convert string to float
 #       check if the student's gwa is the highest
+    if gwa <= max_gwa:
+        max_gwa = gwa
+        highest_students = name
 #   print the student with highest gwa in a "MAANGAS WAY" or "wow factor effect"
