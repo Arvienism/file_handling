@@ -1,8 +1,9 @@
 # pseudocode
 
 # start:
-#   create text file that contains 20 integer
 #   read the text file that contains 20 integer
+with open("number.txt", "r") as f:
+    numbers = f.readlines()
 #   convert text file to integer
 #   separate the number to even and odd
 #   write the even numbers to even.txt
