@@ -16,5 +16,8 @@ for num in number:
     else:
         odd_numbers.append(num)
 #   write the even numbers to even.txt
+with open("even.txt", "w") as f:
+    for num in even_numbers:
+        f.write(str(num) + '\n')
 #   write the odd numbers to odd.txt
 # end:
