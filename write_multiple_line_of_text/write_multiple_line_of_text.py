@@ -19,14 +19,13 @@ for lines in line:
     while True:
 #           prompts the user to input a  new line
         new_line = input("Enter line: ")
+#           asks user if they want to create more lines
 #           write the inputted new line to the mylife.txt
         with open ("mylife.txt", "a") as my_new_file:
             my_new_file.write("Enter line: " + new_line + '\n')
-            my_new_file.write("Are there more lines (y/n)? " + try_again + '\n')
-#           asks user if they want to create more lines
-        try_again = input("Are there more lines (y/n)? ").lower()
+            my_new_file.write("Are there more lines (y/n)? " + try_again_new + '\n')
 #           prompts user to input no, to determine when to stop asking 
-        if try_again != "y": 
+        if try_again_new != "y": 
             break
 #   break the infinite loop
     break
