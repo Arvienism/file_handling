@@ -3,7 +3,7 @@
 even_numbers = []
 odd_numbers = []
 #   read the integers.txt
-with open("integers.txt", "r") as integers_file:
+with open("read_and_write_integers_double_triple/integers.txt", "r") as integers_file:
     numbers = integers_file.readlines()
 #   convert the integers.txt to integer
     for number in numbers:
