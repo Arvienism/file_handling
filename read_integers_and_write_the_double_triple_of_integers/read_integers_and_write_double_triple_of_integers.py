@@ -4,10 +4,10 @@ even_numbers = []
 odd_numbers = []
 #   read the integers.txt
 with open("integers.txt", "r") as integers_file:
-    number = integers_file.readlines()
+    numbers = integers_file.readlines()
 #   convert the integers.txt to integer
-for integers in number:
-    integers = int(integers.strip())
+for number in numbers:
+    integers = int(number.strip())
 #   separate the integers to even and odd
     if integers % 2 == 0:
         even_numbers.append(integers)
@@ -19,10 +19,10 @@ squared_of_even_integers = even_numbers ** 2
 cubed_of_odd_integers = odd_numbers ** 3
 #   write all squared integers to double.txt
 with open("double.txt", "w") as even_integers_file:
-    for integers in even_numbers:
-        even_integers_file.write(str(integers) + '\n')
+    for squared_integers in even_numbers:
+        even_integers_file.write(str(squared_integers) + '\n')
 #   write all cubed integers to triple.txt
 with open("triple.txt", "w") as odd_integers_file:
-    for integers in odd_numbers:
-        odd_integers_file.write(str(integers) + '\n')
+    for cubed_integers in odd_numbers:
+        odd_integers_file.write(str(cubed_integers) + '\n')
 # end:
