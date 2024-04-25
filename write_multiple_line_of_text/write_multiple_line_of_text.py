@@ -19,6 +19,8 @@ while True:
 #           prompts the user to input a  new line
     new_line = input("Enter line: ")
 #           write the inputted new line to the mylife.txt
+    with open ("mylife.txt", "a") as my_new_file:
+        my_new_file.write(new_line + '\n')
 #           asks user if they want to create more lines
 #           create a loop to know if the user wants to stop
 #               prompts user to input no to stop the loop
