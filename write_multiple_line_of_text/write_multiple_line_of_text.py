@@ -8,6 +8,8 @@ for lines in line:
 #       ask user if they want to create more lines
     try_again = input("Are there more lines (y/n)? ").lower()
 #       prompts user to input no to stop the loop 
+    if try_again != "y":
+        break
 #       write the inputted line to the mylife.txt
 #       create an infinite loop to asks user for new multiple lines
 #           prompts the user to input a  new line
