@@ -8,7 +8,7 @@ with open("integers.txt", "r") as integers_file:
 #   convert the integers.txt to integer
 for number in numbers:
     integers = int(number.strip())
-#   separate the integers to even and odd
+#       separate the integers to even and odd
     if integers % 2 == 0:
         even_numbers.append(integers)
     else:
