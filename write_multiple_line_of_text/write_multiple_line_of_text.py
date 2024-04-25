@@ -24,5 +24,7 @@ while True:
 #       asks user if they want to create more lines
     try_again = input("Are there more lines (y/n)? ").lower()
 #       prompts user to input no to stop the loop
+    if try_again != "y": 
+        break
 #   break the infinite loop
 # end:
