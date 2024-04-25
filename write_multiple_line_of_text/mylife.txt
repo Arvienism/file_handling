@@ -7,4 +7,4 @@ Are there more lines (y/n)? y
 Enter line: Explicit is better than implicit.
 Are there more lines (y/n)? y
 Enter line: Simple is better than complex.
-Are there more lines (y/n)? y
+Are there more lines (y/n)? n

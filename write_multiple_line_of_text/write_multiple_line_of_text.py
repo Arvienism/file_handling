@@ -20,6 +20,7 @@ for lines in line:
 #           prompts the user to input a  new line
         new_line = input("Enter line: ")
 #           asks user if they want to create more lines
+        try_again_new = input("Are there more lines (y/n)? ").lower()
 #           write the inputted new line to the mylife.txt
         with open ("mylife.txt", "a") as my_new_file:
             my_new_file.write("Enter line: " + new_line + '\n')

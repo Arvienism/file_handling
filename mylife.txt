@@ -1,3 +1,0 @@
-Enter line: God is good all the time.
-Are there more lines (y/n)? y
-Enter line: All the time God is good.
