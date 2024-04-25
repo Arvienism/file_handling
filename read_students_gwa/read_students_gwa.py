@@ -21,13 +21,15 @@ highest_student= ""
 max_gwa = 1
 #   create a loop to find the highest gwa and name
 for info in students:
-    name, gwa = info.split() #split the name and gwa from text file
-    gwa = float(gwa) #convert string to float
-#       check if the student's gwa is the highest
+#       split the name and gwa from text file
+    name, gwa = info.split() 
+#       convert string to float
+    gwa = float(gwa) 
+#       check if the students gwa is the highest
     if gwa <= max_gwa:
         max_gwa = gwa
         highest_student = name
-#   print the student with highest gwa in a "MAANGAS WAY" or "wow factor effect"
+#      print the student with highest gwa in a "MAANGAS WAY"
 title = text2art("Student with highest GWA")
 print(color.BOLD + color.RED + title)
 student_name = text2art(highest_student, font="block")
