@@ -4,6 +4,8 @@
 with open("integers.txt", "r") as integers_file:
     number = integers_file.readlines()
 #   convert the integers.txt to integer
+for integers in number:
+    integers = int(integers.strip())
 #   separate the integers to even and odd
 #   square all even integers
 #   cube all the odd integers
