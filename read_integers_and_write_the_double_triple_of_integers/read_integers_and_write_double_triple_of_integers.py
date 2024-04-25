@@ -14,6 +14,7 @@ for integers in number:
     else:
         odd_numbers.append(integers)
 #   square all even integers
+squared_of_even_integers = even_numbers ** 2
 #   cube all the odd integers
 #   write all squared integers to double.txt
 #   write all cubed integers to triple.txt
