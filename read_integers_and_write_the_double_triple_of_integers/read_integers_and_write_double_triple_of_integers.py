@@ -19,10 +19,10 @@ squared_of_even_integers = [x ** 2 for x in even_numbers]
 cubed_of_odd_integers = [x ** 3 for x in odd_numbers]
 #   write all squared integers to double.txt
 with open("double.txt", "w") as even_integers_file:
-    for squared_integers in even_numbers:
+    for squared_integers in squared_of_even_integers:
         even_integers_file.write(str(squared_integers) + '\n')
 #   write all cubed integers to triple.txt
 with open("triple.txt", "w") as odd_integers_file:
-    for cubed_integers in odd_numbers:
+    for cubed_integers in cubed_of_odd_integers:
         odd_integers_file.write(str(cubed_integers) + '\n')
 # end:
