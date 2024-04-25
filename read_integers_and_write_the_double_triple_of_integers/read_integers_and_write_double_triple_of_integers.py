@@ -16,7 +16,7 @@ with open("integers.txt", "r") as integers_file:
 #   square all even integers
 squared_of_even_integers = [x ** 2 for x in even_numbers]
 #   cube all the odd integers
-cubed_of_odd_integers = [x ** 2 for x in even_numbers]
+cubed_of_odd_integers = [x ** 3 for x in odd_numbers]
 #   write all squared integers to double.txt
 with open("double.txt", "w") as even_integers_file:
     for squared_integers in even_numbers:
