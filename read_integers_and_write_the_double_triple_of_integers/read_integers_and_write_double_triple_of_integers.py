@@ -16,6 +16,7 @@ for integers in number:
 #   square all even integers
 squared_of_even_integers = even_numbers ** 2
 #   cube all the odd integers
+cubed_of_odd_integers = odd_numbers ** 3
 #   write all squared integers to double.txt
 #   write all cubed integers to triple.txt
 # end:
