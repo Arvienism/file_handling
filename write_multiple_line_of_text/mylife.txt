@@ -1,5 +1,10 @@
-God is good all the time
-all the time God is good
-Simple is better than complex
-Explicit is better than implicit
-Beautiful is better than ugly
+Enter line: God is good all the time.
+Are there more lines (y/n)? y
+Enter line: All the time God is good.
+Are there more lines (y/n)? y
+Enter line: Beautiful is better than ugly.
+Are there more lines (y/n)? y
+Enter line: Explicit is better than implicit.
+Are there more lines (y/n)? y
+Enter line: Simple is better than complex.
+Are there more lines (y/n)? y

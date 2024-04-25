@@ -13,14 +13,16 @@ for lines in line:
 #       write the inputted line to the mylife.txt
     else:
         with open("mylife.txt", "w") as my_file:
-            my_file.write(line + '\n')
+            my_file.write("Enter line: " + line + '\n')
+            my_file.write("Are there more lines (y/n)? " + try_again + '\n')
 #       create an infinite loop to asks user for new multiple lines
     while True:
 #           prompts the user to input a  new line
         new_line = input("Enter line: ")
 #           write the inputted new line to the mylife.txt
         with open ("mylife.txt", "a") as my_new_file:
-            my_new_file.write(new_line + '\n')
+            my_new_file.write("Enter line: " + new_line + '\n')
+            my_new_file.write("Are there more lines (y/n)? " + try_again + '\n')
 #           asks user if they want to create more lines
         try_again = input("Are there more lines (y/n)? ").lower()
 #           prompts user to input no, to determine when to stop asking 
