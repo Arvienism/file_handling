@@ -5,7 +5,7 @@ even_numbers = []
 odd_numbers = []
 
 #   read the text file that contains 20 integer
-with open("number.txt", "r") as f:
+with open("read_numbers_and_ write_even_odd/number.txt", "r") as f:
     number = f.readlines()
 #   convert text file to integer
 for num in number:
