@@ -17,6 +17,7 @@ for lines in line:
 #       create an infinite loop to asks user for new multiple lines
 while True:
 #           prompts the user to input a  new line
+    new_line = input("Enter line: ")
 #           write the inputted new line to the mylife.txt
 #           asks user if they want to create more lines
 #           create a loop to know if the user wants to stop
