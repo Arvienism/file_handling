@@ -11,6 +11,9 @@ for lines in line:
     if try_again != "y":
         break
 #       write the inputted line to the mylife.txt
+    else:
+        with open("mylife.txt", "w") as my_file:
+            my_file.write(line + '\n')
 #       create an infinite loop to asks user for new multiple lines
 #           prompts the user to input a  new line
 #           write the inputted new line to the mylife.txt
