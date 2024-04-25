@@ -6,13 +6,13 @@ odd_numbers = []
 with open("integers.txt", "r") as integers_file:
     numbers = integers_file.readlines()
 #   convert the integers.txt to integer
-for number in numbers:
-    integers = int(number.strip())
+    for number in numbers:
+        integers = int(number.strip())
 #       separate the integers to even and odd
-    if integers % 2 == 0:
-        even_numbers.append(integers)
-    else:
-        odd_numbers.append(integers)
+        if integers % 2 == 0:
+            even_numbers.append(integers)
+        else:
+            odd_numbers.append(integers)
 #   square all even integers
 squared_of_even_integers = [x ** 2 for x in even_numbers]
 #   cube all the odd integers
