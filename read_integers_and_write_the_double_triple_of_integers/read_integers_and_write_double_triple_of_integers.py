@@ -22,4 +22,7 @@ with open("double.txt", "w") as even_integers_file:
     for integers in even_numbers:
         even_integers_file.write(str(integers) + '\n')
 #   write all cubed integers to triple.txt
+with open("triple.txt", "w") as odd_integers_file:
+    for integers in odd_numbers:
+        odd_integers_file.write(str(integers) + '\n')
 # end:
