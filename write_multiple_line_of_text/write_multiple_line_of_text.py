@@ -22,6 +22,7 @@ while True:
     with open ("mylife.txt", "a") as my_new_file:
         my_new_file.write(new_line + '\n')
 #           asks user if they want to create more lines
+    try_again = input("Are there more lines (y/n)? ").lower()
 #           create a loop to know if the user wants to stop
 #               prompts user to input no to stop the loop
 #       break the infinite loop
