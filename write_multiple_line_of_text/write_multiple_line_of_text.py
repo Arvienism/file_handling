@@ -27,4 +27,5 @@ for lines in line:
         if try_again != "y": 
             break
 #   break the infinite loop
+    break
 # end:
