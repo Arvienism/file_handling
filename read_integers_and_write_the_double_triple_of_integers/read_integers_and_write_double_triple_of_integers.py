@@ -18,5 +18,8 @@ squared_of_even_integers = even_numbers ** 2
 #   cube all the odd integers
 cubed_of_odd_integers = odd_numbers ** 3
 #   write all squared integers to double.txt
+with open("double.txt", "w") as even_integers_file:
+    for integers in even_numbers:
+        even_integers_file.write(str(integers) + '\n')
 #   write all cubed integers to triple.txt
 # end:
