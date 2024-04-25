@@ -15,6 +15,7 @@ for lines in line:
         with open("mylife.txt", "w") as my_file:
             my_file.write(line + '\n')
 #       create an infinite loop to asks user for new multiple lines
+while True:
 #           prompts the user to input a  new line
 #           write the inputted new line to the mylife.txt
 #           asks user if they want to create more lines
