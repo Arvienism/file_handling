@@ -1,5 +1,7 @@
 # start:
 #   create text file named integers.txt that contains 20 integers
+even_numbers = []
+odd_numbers = []
 #   read the integers.txt
 with open("integers.txt", "r") as integers_file:
     number = integers_file.readlines()
@@ -7,6 +9,10 @@ with open("integers.txt", "r") as integers_file:
 for integers in number:
     integers = int(integers.strip())
 #   separate the integers to even and odd
+    if integers % 2 == 0:
+        even_numbers.append(integers)
+    else:
+        odd_numbers.append(integers)
 #   square all even integers
 #   cube all the odd integers
 #   write all squared integers to double.txt
