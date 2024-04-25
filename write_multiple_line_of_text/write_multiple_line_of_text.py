@@ -4,7 +4,9 @@
 #   prompts user to input a line
 line = input("Enter line: ")
 #   create a loop to write a line
+for lines in line:
 #       ask user if they want to creat more lines
+    try_again = input("Are there more lines (y/n)? ").lower()
 #       prompts user to input no to stop the loop 
 #       write the inputted line to the mylife.txt
 #       create an infinite loop to asks user for new multiple lines
